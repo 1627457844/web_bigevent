@@ -61,6 +61,7 @@ $(function () {
             data:$(this).serialize(),
             success:function(res){
                   //登录失败校验
+               
                 if (res.status != 0) {
                     return layer.msg(res.message);
                 }
