@@ -7,6 +7,8 @@
     <title>大事件</title>
     <!-- 导入layui框架 -->
     <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="shortcut icon" href="/bitbug_favicon.ico" />
+    
     <link rel="stylesheet" href="/assets/fonts/iconfont.css">
     <!-- 导入自己index -->
     <link rel="stylesheet" href="/assets/css/index.css">
@@ -26,14 +28,14 @@
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">密码重置</a></dd>
+                        <dd> <a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_avatar.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user_resetpwd.html" target="fm">密码重置</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;"id="btnLogout">
-                <span class="iconfont icon-tuichu"></span>退出</a></li>
+                    <a href="javascript:;" id="btnLogout">
+                        <span class="iconfont icon-tuichu"></span>退出</a></li>
             </ul>
         </div>
 
@@ -62,11 +64,16 @@
                         </dl>
                     </li>
                     <li class="layui-nav-item">
-                        <a href="javascript:;" ><span class="iconfont icon-user"></span>个人中心</a>
+                        <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd>
+                                <a href="/user/user_info.html" target="fm">
+                                    <i class="layui-icon layui-icon-app"></i>
+                                    基本资料
+                                </a>
+                            </dd>
+                            <dd><a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_resetpwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
 
                         </dl>
                     </li>
@@ -75,11 +82,9 @@
                 </ul>
             </div>
         </div>
-
+        <!-- //内容区域 -->
         <div class="layui-body">
-
             <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
-
         </div>
 
         <div class="layui-footer">
